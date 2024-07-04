@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Anisha</span><br>Javvaji From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Fresh off completing my Master’s in Computer Science at the University of Florida with a stellar 3.73 GPA. I’m passionate about pushing the boundaries in tech, from crafting seamless web experiences to mastering the cloud. My journey has been a blend of innovative problem-solving and performance optimization. Ready to create the next big thing in tech! Let's innovate and inspire together!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development</span><br>HTML, CSS, JavaScript, React JS, Angular JS</li>
+                        <li><span>Back-End Development</span><br>Python, Java, Flask, Django, Node JS</li>
+                        <li><span>Cloud & DevOps</span><br>Amazon AWS, Azure, Docker, Kubernetes, Terraform</li>
+                        <li><span>Frameworks & Databases</span><br>Spark, MySQL, PostgreSQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>January 2024 - May 2024</span><br>Web Developer Intern at SuperStars</li>
+                        <li><span>August 2023 - May 2024</span><br>Operations Associate at UF Recsports</li>
+                        <li><span>March 2022 - May 2022</span><br>Software Developer Intern at Cognizant Tech Sol</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Master's in CS from The University of Florida</li>
+                        <li><span>2022</span><br>Bachelor's in Electronics and Communications from JNTUH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Superstars</h2>
+                <p>As a Web Developer Intern, I optimized the Angular codebase, achieving a 25% improvement in responsiveness and user experience for the Admin portal. I led front-end development and initiated design with Figma, reducing loading times by 40% and enhancing daily administrative efficiency.</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UF RecSports</h2>
+                <p>As an Operations Associate, I managed the daily operations of two major sports complexes and outdoor areas, accommodating thousands of visitors. I oversaw intramural sports teams and various athletic events, fostering strong customer relationships through direct interaction and support. </p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Cognizant</h2>
+                <p>Refined client-focused applications, enhancing functionality and user experience, which boosted client engagement and satisfaction. Managed the software development cycle, adopted Agile practices and Git, and improved code quality. Created detailed system architecture and API documentation, increasing transparency and client comprehension, leading to project success and stronger client relationships.</p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1a.webp">
+                <div class="layer">
+                    <h3>GatorGather</h3>
+                    <p>Developed a full-stack web app for University of Florida students to discover and register for campus events, with over 1000 clubs promoting activities. Enhanced engagement with group registration and club subscription features."</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3a.webp">
+                <div class="layer">
+                    <h3>InventoryCloud</h3>
+                    <p>
+                        Engineered a cloud inventory system to enhance product tracking and order fulfillment for a retail business. Streamlined deployment using Docker, reducing costs and improving efficiency. Upgraded to PostgreSQL for better inventory control, reporting, and data security, leading to improved regulatory compliance.
+                        </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2a.webp">
+                <div class="layer">
+                    <h3>StockPredict</h3>
+                    <p>Implemented a research project on stock price prediction using LSTM Neural Networks to forecast future stock values. Integrated RNN layers in TensorFlow, achieving high precision. Enhanced accuracy with scaling and flattening techniques.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> anishajavvaji01@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 3526650558</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Anisha_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
