@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: black;
+    background: rgba(0, 0, 0, 0.789);
     color: #fff;
 }
 #header{
@@ -62,13 +62,18 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: rgba(0, 0, 0, 0.789);
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: rgb(147, 207, 237);
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -2px -2px 0 #000;
 }
 /* -----------about--------------- */
 #about{
@@ -90,6 +95,8 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    color: #fff;
+
 }
 
 .sub-title{
@@ -130,13 +137,14 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
+
 }
 
 /* ----------------services------------- */
